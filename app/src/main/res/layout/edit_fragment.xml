@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.edit.EditFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border"
+            android:backgroundTintMode="multiply"
+            android:drawableLeft="@mipmap/tag_outline"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:shadowColor="#BCBCBC"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0" />
+
+        <EditText
+            android:id="@+id/create_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@mipmap/date_outline"
+            android:editable="true"
+            android:ems="10"
+            android:hint="Enter Date"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/from_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@mipmap/start_time"
+            android:editable="true"
+            android:ems="10"
+            android:hint="From Time"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/to_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@mipmap/end_time"
+            android:editable="true"
+            android:ems="10"
+            android:hint="To Time"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/reply"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@mipmap/reply"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Auto Reply"
+            android:inputType="textMultiLine"
+            android:shadowColor="#333"
+            android:shadowDx="15"
+            tools:shadowDy="15" />
+
+        <Button
+            android:id="@+id/submit_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Save"
+            android:visibility="visible"
+            app:cornerRadius="3dp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:onClick="cancelEdit"
+            android:text="cancel"
+            app:cornerRadius="3dp" />
+
+        <TextView
+            android:id="@+id/hidden_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+
+</FrameLayout>

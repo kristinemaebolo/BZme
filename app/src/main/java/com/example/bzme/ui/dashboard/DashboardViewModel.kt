@@ -1,0 +1,13 @@
+package com.example.bzme.ui.dashboard
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+
+class DashboardViewModel : ViewModel() {
+
+    private val _text = MutableLiveData<String>().apply {
+        value = "Set Schedule"
+    }
+    val text: LiveData<String> = _text
+}
